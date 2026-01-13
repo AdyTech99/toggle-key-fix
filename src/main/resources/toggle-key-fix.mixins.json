@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "io.github.adytech99.togglekeyfix.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+      "ToggleKeyMappingMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

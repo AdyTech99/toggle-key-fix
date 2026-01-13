@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "toggle-key-fix",
+	"version": "${version}",
+	"name": "Toggle Key Fix",
+	"description": "This mod fixes MC-301281, which was erroneously marked as 'works as intended' by Mojang, and caused toggle sprint and sneak to be reset upon opening a GUI.",
+	"authors": [
+		"AdyTech99"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "LGPL v3",
+	"icon": "assets/toggle-key-fix/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+          "io.github.adytech99.togglekeyfix.ToggleKeyFix"
+		]
+	},
+	"mixins": [
+		"toggle-key-fix.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
